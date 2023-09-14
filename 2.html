@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Serial Position Effect-Dropdown List</h1>
+    <label for="drop">Select Course</label>
+    <select name="drop" id="drop">
+        <option hidden>Please Select</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="CIVIL">CIVIL</option>
+        <option value="BIL TECHNOLOGY">BIO TECHNOLOGY</option>
+        <option value="IT">IT</option>
+    </select>
+    <script>
+        document.getElementById('drop').addEventListener('change',function (){
+            alert('You Selected : ' + document.getElementById('drop').value)
+        })
+    </script>
+</body>
+</html>
